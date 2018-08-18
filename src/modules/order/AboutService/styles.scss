@@ -1,0 +1,18 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 14px;
+}
+
+.bird {
+  flex-shrink: 0;
+  margin: 0 20px 20px 0;
+  width: 368px;
+  height: 240px;
+  background: url(./resources/images/bird.svg) no-repeat center;
+}
+
+.text {
+  max-width: 312px;
+}

@@ -1,0 +1,75 @@
+:global { /* stylelint-disable-line */
+  @import 'normalize.css/normalize.css';
+
+  @font-face {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Regular'), local('ProximaNova-Regular'), url('./resources/fonts/proxima-nova-regular-lat-ext.woff2') format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: 'proxima-nova', sans-serif;
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  textarea,
+  select,
+  input,
+  button {
+    outline: none;
+    border: 0;
+  }
+
+  a {
+    // TODO colors in variables and single format hex
+    color: #ff408e;
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-color: #979797;
+    text-decoration-style: dashed;
+    text-decoration-skip-ink: none;
+
+    &:hover {
+      text-decoration-color: #ff408e;
+    }
+  }
+
+  input {
+    cursor: pointer;
+    appearance: none;
+  }
+
+  * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}

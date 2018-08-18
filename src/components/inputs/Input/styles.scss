@@ -1,0 +1,96 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+  width: 340px;
+  color: #9b9b9b;
+
+  .placeholder {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    color: #9b9b9b;
+    font-weight: 100;
+    font-size: 18px;
+    transition: 0.2s ease top, 0.2s ease left, 0.2s ease background, 0.2s ease opacity;
+    pointer-events: none;
+
+    &.placeholder__hidden {
+      opacity: 0;
+    }
+  }
+
+  input {
+    padding: 0 15px;
+    width: 100%;
+    height: 50px;
+    border: #e6e6e6 solid 1px;
+    background: #fafafa;
+    color: #000;
+    font-weight: 100;
+    font-size: 18px;
+
+    &:focus {
+      border: #ff458f solid 1px;
+      background: #fff !important;
+
+      & ~ .placeholder {
+        top: -8px;
+        left: 14px;
+        padding: 2px;
+        background: #fff;
+        font-size: 14px;
+        opacity: 1;
+      }
+    }
+
+    &:not(:focus):valid ~ .placeholder {
+      opacity: 0;
+    }
+  }
+
+  &.wrapper__error {
+    input {
+      border: #fd6464 solid 2px;
+      background: #fafafa;
+    }
+  }
+
+  &.wrapper__white {
+    input {
+      background: #fff;
+    }
+  }
+
+  &.wrapper__info {
+    input {
+      padding-right: 40px;
+    }
+  }
+
+  .error {
+    position: absolute;
+    margin-top: 2px;
+    color: #f00;
+    font-size: 12px;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    width: 13px;
+    height: 13px;
+    background: url(./resources/images/checkmark.svg) no-repeat center;
+    opacity: 0.6;
+  }
+
+  .info {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 21px;
+    height: 21px;
+    background: url(./resources/images/info.svg) no-repeat center;
+    opacity: 0.1;
+  }
+}

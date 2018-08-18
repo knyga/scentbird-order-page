@@ -1,0 +1,85 @@
+// Note: styles are partly the same in all *Forms
+// TODO: merge styles
+.form {
+  justify-content: space-between;
+  max-width: 700px;
+}
+
+// TODO fix font, it's to bold
+.title {
+  font-size: 24px;
+
+  //font-weight: 400;
+}
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: inherit;
+
+  & > * {
+    margin-top: 20px;
+
+    // margin: 20px 20px 0 0;
+    //&:last-child {
+    //  margin-right: 0;
+    //}
+  }
+}
+
+.fields_1to1x3 {
+  @extend .fields;
+
+  & > div {
+    width: 220px;
+  }
+}
+
+.fields_single {
+  @extend .fields;
+
+  & > div {
+    width: 100%;
+  }
+}
+
+.fields_3to1 {
+  @extend .fields;
+
+  & > div:nth-child(1) {
+    width: 460px;
+  }
+
+  & > div:nth-child(2) {
+    width: 220px;
+  }
+}
+
+.field_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 340px;
+  font-size: 14px;
+}
+
+.billing {
+  justify-content: inherit;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .title {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .fields {
+    flex-direction: column;
+    align-items: center;
+
+    & > * {
+      width: 340px !important;
+    }
+  }
+}

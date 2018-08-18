@@ -1,0 +1,14 @@
+{
+  "extends": "@weblab.technology/codestyle/eslint",
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.dev.js"
+      }
+    }
+  },
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  }
+}

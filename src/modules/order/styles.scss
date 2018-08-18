@@ -1,0 +1,203 @@
+.logo {
+  width: 137px;
+  height: 40px;
+  background-image: url(./logo.svg);
+  background-size: cover;
+}
+
+.header {
+  margin: 18px 0 43px;
+}
+
+.global {
+  margin: 0 120px 0 120px;
+  transition: 0.2s ease margin;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.info {
+  margin-top: 7px;
+  color: #ff408e;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+
+  .about {
+    display: none;
+
+    & > * {
+      justify-content: center;
+      max-width: 700px;
+    }
+  }
+
+  .left {
+    margin-right: 68px;
+
+    & > *:nth-child(2) {
+      margin-top: 25px;
+      width: 400px;
+    }
+  }
+
+  .title {
+    position: absolute;
+    left: 588px;
+    margin-bottom: 40px;
+  }
+
+  .forms {
+    margin-top: 104px;
+
+    .form {
+      & > * {
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .buttons {
+    margin-bottom: 40px;
+
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .back {
+      margin-right: 34px;
+      color: #000;
+      font-size: 18px;
+      opacity: 0.4;
+      text-decoration-style: solid;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .content {
+    .forms {
+      .form {
+        & > * {
+          width: 700px;
+        }
+      }
+
+      .buttons {
+        & > div {
+          width: 700px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1425px) {
+  @media only screen and (max-width: 800px) {
+    .global {
+      margin: 0;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo {
+      width: 114px;
+      height: 32px;
+    }
+
+    .content {
+      .title {
+        text-align: center;
+
+        h1 {
+          font-size: 24px;
+        }
+
+        .info {
+          margin-top: 7px;
+          color: #ff408e;
+        }
+      }
+
+      .about {
+        & > * {
+          flex-direction: column;
+          align-items: center;
+
+          & > *:first-child {
+            order: 2;
+          }
+        }
+      }
+
+      .buttons {
+        & > div {
+          justify-content: center;
+        }
+
+        .back {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .global {
+    margin: 0 40px 0 40px;
+  }
+
+  .content {
+    flex-direction: column;
+
+    .title {
+      position: inherit;
+      left: 0;
+    }
+
+    .left {
+      margin-right: 0;
+
+      // AboutService
+      & > *:nth-child(2) {
+        display: none;
+      }
+    }
+
+    .forms {
+      margin-top: 40px;
+
+      .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
