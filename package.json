@@ -1,7 +1,7 @@
 {
-  "name": "scentbird-payment-page-test",
+  "name": "scentbird-order-page",
   "version": "1.0.0",
-  "description": "scentbird-payment-page-test",
+  "description": "scentbird-order-page",
   "scripts": {
     "clean": "rimraf dist",
     "start": "node server.js",
