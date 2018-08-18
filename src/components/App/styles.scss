@@ -1,0 +1,38 @@
+.logo {
+  width: 137px;
+  height: 40px;
+  background-image: url(./resources/images/logo.svg);
+  background-size: cover;
+}
+
+.header {
+  margin: 18px 0 43px;
+}
+
+.global {
+  margin: 0 120px 0 120px;
+  transition: 0.2s ease margin;
+  min-width: 380px;
+}
+
+@media only screen and (max-width: 1425px) and (min-width: 800px) {
+  .global {
+    margin: 0 40px 0 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .global {
+    margin: 0;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 114px;
+    height: 32px;
+  }
+}

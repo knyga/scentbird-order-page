@@ -12,10 +12,6 @@ import styles from './styles.scss';
 export class OrderModule extends Component {
   render() {
     return (
-      <div styleName="global">
-        <div styleName="header">
-          <div styleName="logo" />
-        </div>
         <div styleName="content">
           <div styleName="title">
             <h1>MONTH-TO-MONTH SUBSCRIPTION</h1>
@@ -46,7 +42,6 @@ export class OrderModule extends Component {
             <AboutService />
           </div>
         </div>
-      </div>
     );
   }
 }
