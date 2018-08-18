@@ -1,13 +1,13 @@
-#Install
+# Install
 * Run `npm install` or `yarn`
 
-#Development
+# Development
 * To start development:
 	* Use `npm start`, it run webpack dev server
 	* Wait until webpack compile project.
 	* Default port for development server is 3000
 
-#Npm scripts
+# Npm scripts
 To run script use `npm run SCRIPT_NAME`.
 
 NOTE: NO TESTS WERE PROVIDED FOR CURRENT APP!
