@@ -65,7 +65,6 @@
     "webpack-hot-middleware": "^2.21.0"
   },
   "dependencies": {
-    "@weblab.technology/vf-ui-components": "git+ssh://git@bitbucket.org:ollyhealth/vf-ui-components.git#master",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.3.15",
     "babel-loader": "^6.2.0",
